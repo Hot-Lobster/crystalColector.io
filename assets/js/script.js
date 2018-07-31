@@ -53,39 +53,39 @@ $('#crystal1').on('click',function crystal1(){
   backsound.play()
   console.log("New userTotal= " + userTotal);
   $('#finalTotal').text("current score: " + userTotal); 
-      if (userTotal === objective){
-        yay();
-      }
-      else if ( userTotal > objective){
-        loser();
-      } 
-});
+  switch(expression) {
+    case userTotal === objective:
+        yay()
+        break;
+    case userTotal > objective:
+      loser();
+};
 $('#crystal2').on('click',function crystal2(){
   $('#winLoss').text("")
   userTotal = userTotal + num3;
   backsound.play()
   console.log("New userTotal= " + userTotal);
   $('#finalTotal').text("current score: " + userTotal);
-        if (userTotal === objective){
-        yay();
-      }
-      else if ( userTotal > objective){
-        loser();
-      } 
-});
+  switch(expression) {
+    case userTotal === objective:
+        yay()
+        break;
+    case userTotal > objective:
+      loser();
+};
 $('#crystal3').on('click',function crystal3(){
   $('#winLoss').text("")
   userTotal = userTotal + num4;
   backsound.play()
   console.log("New userTotal= " + userTotal);
   $('#finalTotal').text("current score: " + userTotal); 
-        if (userTotal === objective){
-        yay();
-      }
-      else if ( userTotal > objective){
-        loser();
-      }
-});
+  switch(expression) {
+    case userTotal === objective:
+        yay()
+        break;
+    case userTotal > objective:
+      loser();
+};
  //adds to the win total
  function yay(){
   $('#winLoss').text("You Won!");
@@ -100,4 +100,7 @@ $('#crystal3').on('click',function crystal3(){
     $('#numberLosses').text("losses: " + losses);
     reset()
   }
+})
+})
+})
 });
