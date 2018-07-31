@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/CSS/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</head>
+<body class="body">
+
+<div class="header">
+    <h1>Mystical Crystical</h1>
+</div>
+<h3 class="p">
+    Welcome to Mystical Crystical! This game is played by clicking the crystals to find the hidden values and add them together to match the current score to the number on the right.
+    Be careful the crystal values change each round, good luck and have fun!
+</h3>
+<div class="row">
+    <div class="scores col-4">
+        <div id="numberLosses"></div>
+        <div id="numberWins"></div>
+    </div>
+    <div id="winLoss" class="break winLoss col-4"></div>
+    <div class="scores col-4">
+        <h2 id="goal"></h2>
+    </div>
+</div>
+<div class="row"></div>
+<div class="row">
+    <div class="break col-4"></div>
+            <div class="scores col-4">
+                <h2  id="finalTotal"></h2>
+            </div>
+    <div class="break col-4"></div>
+    </div>
+</div>
+<div class="row">
+        <div id="crystal0" class="col-3">
+            <img id="crystal0" class="crystals" src="assets/crystal_images/crystal0.png">
+        </div>
+        <div id="crystal1" class="col-3 crystals">
+            <img id="crystal1" class="crystals" src="assets/crystal_images/crystal1.png">
+        </div>
+        <div id="crystal2" class="col-3 crystals">
+            <img id="crystal2" class="crystals" src="assets/crystal_images/crystal2.png">
+        </div>
+        <div id="crystal3" class="col-3 crystals">
+            <img id="crystal3" class="crystals" src="assets/crystal_images/crystal3.png">
+        </div>
+    
+</div>
+<div id="userTotal"></div>
+
+</body>
+</html>
